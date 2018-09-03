@@ -73,25 +73,26 @@ Other notes:
 Transform the FriendlyChat to a primitive HabitMaker client,
 featuring the critical target goals.
 
-- [ ] Design the storage schema for Habits and HabitLogs for multiple users
-  - [ ] Schema for Habits, with rules
-  - [ ] Schema for HabitLogs, with rules
+- [x] Design the storage schema for Habits and HabitLogs for multiple users
+  - [x] Schema for Habits, with rules
+  - [x] Schema for HabitLogs, with rules
 
-- [ ] Make the minimal changes to FriendlyChat to create Habits and HabitLogs
-  - [ ] Enter habits with message format: habit:name:type:days
-  - [ ] Enter habit logs with message format: log:name
-  - [ ] Verify correct entry per user in Firebase console
+- [x] Make the minimal changes to FriendlyChat to create Habits and HabitLogs
+  - [x] Enter habits with message format: habit:name:type:days
+  - [x] Enter habit logs with message format: log:habitId (used hardcoded id)
+  - [x] Verify correct entry per user in Firebase console
 
-- [ ] Make the minimal changes to FriendlyChat to view Habits and HabitLogs
-  - [ ] View Habits
-  - [ ] View HabitLogs
+- [x] Make the minimal changes to FriendlyChat to view Habits and HabitLogs
+  - [x] View Habits
+  - [x] View HabitLogs
 
-- [ ] Verify with multiple users (Google and Twitter)
+- [x] Verify with multiple users (Google and Twitter)
 
-- [ ] Make it impossible to add more than 3 Habits by one of the users but not the other
-  - [ ] Design the rule
-  - [ ] Verify the Google user cannot add more than 3, and the Twitter user can
+- [-] Make it impossible to add more than 3 Habits by one of the users but not the other
+  - [-] Design the rule
+  - [-] Verify the Google user cannot add more than 3, and the Twitter user can
+  - Not needed. The rule on HabitLogs requiring a valid habit id is already a good example of a rule depending on another data node.
 
-- [ ] Save the POC in a separate repo
+- [x] Save the POC in a separate repo: https://github.com/habitmaker-org/habitmaker-poc
 
 [rules]: https://firebase.google.com/docs/database/security/

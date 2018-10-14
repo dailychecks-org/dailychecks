@@ -49,6 +49,9 @@ Other interesting examples and useful links:
 
 Other useful commands:
 
+    # run the starter app
+    firebase serve --only hosting
+
     # replace database content
     firebase database:set / ./initial_messages.json
 
@@ -59,6 +62,9 @@ Other useful commands:
     firebase deploy --except functions
 
     # deploy to cloud hosting
+    firebase deploy
+
+    # open cloud hosting site
     firebase open hosting:site
 
 Other notes:
